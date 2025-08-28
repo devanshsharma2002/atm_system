@@ -7,13 +7,14 @@ class currencyConversion:
         data = response.json()
         return round((data['rates'][to_cur.upper()]),2) #returns coverted rate
 
-
+#test data
 amt=3600
 from_curr='inr'
 to_curr='usd'
 
+#object creation
 currency_obj=currencyConversion()
 result=currency_obj.convert_currency(amt, from_curr, to_curr)
 
-
+#printing o/p
 print(f'{amt} {from_curr.upper()} -> {to_curr.upper()} {result}')
