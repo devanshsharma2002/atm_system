@@ -1,0 +1,24 @@
+feature to be implemented:
+1. basic transactions using oops of volatile nature (ongoing)
+2. implementing ai to change the final balance to required currency based on current exchange rates
+3. error handling
+4. removing volatility to store user data permanently(Persistance)
+5. implement gui
+6. bank side and customer side interface
+7. implement abstraction
+8. test cases
+9. customer class
+10 load customer data using csv / excel
+
+technologies involved:
+python
+sql
+ai
+api
+
+implementation design : 
+
+classes :
+customer
+bank
+atm
