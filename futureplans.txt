@@ -1,6 +1,6 @@
 feature to be implemented:
 1. basic transactions using oops of volatile nature (ongoing)
-2. implementing ai to change the final balance to required currency based on current exchange rates
+2. implementing api to change the final balance to required currency based on current exchange rates
 3. error handling
 4. removing volatility to store user data permanently(Persistance)
 5. implement gui
@@ -9,12 +9,15 @@ feature to be implemented:
 8. test cases
 9. customer class
 10 load customer data using csv / excel
+11. using ai to covert menus to different language.
+12. improve accessibility via voice based transactions
 
 technologies involved:
 python
 sql
 ai
 api
+json
 
 implementation design : 
 
