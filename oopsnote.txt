@@ -1,0 +1,114 @@
+#constructor
+fixed lines of codes that execute upon object creation 
+practical use:
+when you dont want user to worry about something 
+example being connecting to internet or conneting to database
+
+#self"self is the current object"
+self keyword is used to refer to the own class
+"jis object ke saath aap abhi kaam kar rahe ho wohi self ha" 
+to verify : 
+print class adress and self adress they will be samew
+
+#magic methods
+automatically called functions
+__init__ constructor
+__str__ executes code when print() is called
+__add/truediv/mul/sub__
+
+#encapsulation
+instance variables are those variables that are creaated under constructor.
+thier values differ for every object creaated
+
+a junior dev can modify important vaaribales values.
+to prevent this unwanted modification encapsulation is used.
+how? put __method/variable to make a it a private attribute
+_method/varibale to make it protected attribute
+
+but nothing in python is truly private
+eg. if we know class, object and methodname
+we can crash / modify with object._class__method= value
+
+getter/setter functions is used to modify encapsulated material
+these functions are gatekeepers to safegaurd the code as 
+the values are passed through a function where we can 
+put rigourous checks 
+
+#reference variable
+reference-variable=class.method()
+
+#pass by referncce
+mutable datatype->original changed
+immutable datatype->original not changed
+
+#collection of objects 
+upon creation of a class and methods, we can make multiple objects and
+store it as iterbale
+eg : objects-> o1,o2,o3
+list=[o1,o2,o3]
+to access:
+for i in list:
+    o1.method/variable()
+
+#static variable and method
+instance vaaribales-> instantiated every time object is created and constructor is run
+static-> is like global variable. is instantiated once and can be updated with every object
+it retains the previous value
+use->bank name, college name , serial number assigned to every object created
+how? declared inside class ,outside any methods , at the top 
+accessed via className.variableName
+
+->#class relationship
+
+#inheritance
+DRY principle 
+suppose we want create a app like udemy
+it has user interface and instructor interface
+both will have common methods like login and registration
+keeping in mind DRY principle and INHEERITENCE
+we seperate out the login and registration and create a clas for it
+now that class will get inherited by student and instructor class.
+
+inherited: variable, methods,constructor . private members not inherited.
+
+syntax-> class user
+         class student(user)
+         class instructor(user)
+
+if child doesnt have constructor, parents constructor will be called
+if parent and child both has same method name:
+method will be called whose object is created
+
+->#super
+upon mentioning super().methodname() parent's method is called instead of child
+
+#type of INHEERITENCE
+1. single level: p->c
+2. multilevel: p->c1.....->cn 
+3. herarchical: p->c1 p->c2
+4. hybrid: mix of above
+
+#MRO
+if class a and b has same method and class c inherits both a and b,
+method wll be executed from where it is written first in order
+
+class a->method x
+class b->method x
+class c(a,b)  
+obj=c()
+c.method x()->gives class a method x as it is mentioned first
+
+#method - operator overloading
+traditional method oveerloading not available in python
+to achieve it , play with arguments like
+method(a,b=0,c=0)
+
+operator ol->using magic methods like in case of custom datatype fraction
+the traditional + operation replaced by a function via __add__
+
+->project
+indianrailapi.com
+it returns json format.
+json viewer can be used to understand it.
+json is in format of dictionary
+pip install requests  to handle it

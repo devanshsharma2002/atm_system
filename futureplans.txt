@@ -24,5 +24,4 @@ implementation design :
 classes :
 customer
 bank
-atm
-currency_conversion
+backend
