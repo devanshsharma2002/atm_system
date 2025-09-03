@@ -1,12 +1,37 @@
-feature to be implemented:
+Problem Statement
+
+In today’s digital era, banking systems must handle not only secure and efficient transactions but also cater to 
+diverse customer needs such as multi-currency support, accessibility, and user-friendly interfaces. 
+Traditional banking applications often lack flexibility in currency conversion, multilingual accessibility, and voice-enabled features, which limits usability for customers across different regions and abilities.
+The challenge lies in designing and implementing a banking system that provides:
+
+Basic and advanced transactions with proper object-oriented programming (OOP) principles to ensure modularity, abstraction, and reusability.
+
+Multi-currency support by integrating external APIs for real-time exchange rates.
+
+Persistent storage to securely maintain customer and transaction data using databases.
+
+Robust error handling and test cases to improve reliability.
+
+Dual interfaces (Bank-side and Customer-side) with a Graphical User Interface (GUI) for better usability.
+
+Data management features such as loading customer records from CSV/Excel.
+
+AI-driven accessibility, including multilingual menu conversion and voice-based transactions, to ensure inclusivity for a wider user base.
+
+The goal of this project is to create a comprehensive banking application that not only simulates core banking operations but also integrates modern technologies like APIs, SQL databases, JSON data exchange, and AI to deliver a smart, scalable, and accessible solution.feature to be implemented:
+
+
+
+#to be implemented
 1. basic transactions using oops of volatile nature (ongoing)
 2. implementing api to change the final balance to required currency based on current exchange rates
-3. error handling
+3. error handling*
 4. removing volatility to store user data permanently(Persistance)
 5. implement gui
 6. bank side and customer side interface
 7. implement abstraction
-8. test cases
+8. test cases*
 9. customer class
 10 load customer data using csv / excel
 11. using ai to covert menus to different language.
